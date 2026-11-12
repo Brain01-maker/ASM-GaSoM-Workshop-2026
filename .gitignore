@@ -1,0 +1,27 @@
+# Sequencing datasets
+data/
+
+# Docker build logs
+build*.log
+
+# Temporary files
+=
+CANCELED
+[internal]
+transferring
+
+# Generated analysis outputs
+results/
+output/
+*.html
+*.zip
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local environment files
+.env
+
+# Ignore literal temporary filename
+\[internal\]
