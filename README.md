@@ -46,7 +46,7 @@ For Linux or macOS:
 
 ```bash
 mkdir -p workshop-results
-docker run --rm -it -v "$(pwd)/workshop-results:/home/workshop/results" lamarana01/asm-gasom-training:v1.0
+docker run --rm -it --user "$(id -u):$(id -g)" -v "$(pwd)/workshop-results:/home/workshop/results" lamarana01/asm-gasom-training:v1.0
 ```
 
 Inside the container, check the available files:
@@ -98,7 +98,6 @@ Output: `results/fastp/`
 ### Exercise 3 — Genome assembly
 
 ```bash
-bash
 bash scripts/03_spades.sh
 ```
 
